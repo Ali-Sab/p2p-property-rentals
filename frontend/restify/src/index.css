@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html, body, div#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+div.main {
+  height: 100%;
+  width: 100%;
+  padding: 2rem 10%;
+  overflow: auto;
+  align-self: center;
+}
+
+.btn {
+  font-weight: 400 !important;
+  border-radius: 4px !important;
+}
+
+button.btn-primary-dark {
+  background-color: rgb(0, 0, 110) !important;
+  border-color: black;
+  font-weight: 500 !important;
+}
+
+button.btn-primary-dark:hover {
+  background-color: rgb(0, 0, 255) !important;
+  border-color: black;
+  font-weight: 500 !important;
+}
+
+button.btn-cancel {
+  font-weight: 500 !important;
+}
+
+button.btn-cancel:hover {
+  font-weight: 500 !important;
+}
+
+div.row-cols-1>* {
+  max-width: 320px;
+}
+
+div.list-group-item-secondary {
+  color: black;
+}
+
+div.list-group-item-dark {
+  color: black;
+  background-color: rgb(242, 242, 242);
+}
+
+.btn.stretched-link {
+  height: 0px;
+  width: 0px;
+}
+
+form.d-flex input,
+form.d-flex button {
+  margin-top: 6px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 6px;
+}
+
+span.bolded {
+  font-weight: bold;
+}
+
+span.heavy {
+  font-weight: 500;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.w-67 {
+  width: 67%;
+}
+
+hr.solid {
+  border-top: 2px solid #bbb;
+  margin: 20px 0px;
+}
+
+main form div button.btn-primary-dark {
+  background-color: rgb(0, 0, 110) !important;
+  border-color: black;
+  font-weight: 500 !important;
+}
+
+main form div button.btn-primary-dark:hover {
+  background-color: rgb(0, 0, 255) !important;
+  border-color: black;
+  font-weight: 500 !important;
+}
+
+section div.main-container {
+  max-width: 90%;
+  min-width: 450px;
+}
+
+.card-top {
+  background-color: black;
+}
+
+.card-body {
+  cursor: pointer;
+}
+
+.card-img-top {
+  max-height: 11rem;
+  aspect-ratio: 8/5;
+  object-fit: contain;
+}
+
+.profile-image {
+  object-fit: cover;
+}
+
+.card.p-0 {
+  min-height: 300px !important;
+}
+
+.card.p-0:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.login-form {
+  width: 100%;
+  margin-bottom: 20%;
+  min-width: 450px;
+}
+
+div.errorPage {
+  margin: 1rem;
+}
+
+.carousel-indicators {
+  transform: scale(0.75);
+}
+
+.carousel-indicators button {
+  border: 1px solid rgb(101, 101, 101) !important;
+  background-color: rgb(228, 228, 228) !important;
+}

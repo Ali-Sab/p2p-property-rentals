@@ -1,0 +1,331 @@
+<!-- Bootstrap is used -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restify</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Restify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my_listings.html">My Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations_user.html">My Reservations</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i style="font-size:1.3rem" class="fa" title="Notifications">&#xf0f3;</i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="profile.html">User 15 has left a review.</a></li>
+                            <li><a class="dropdown-item" href="reservations_host.html">Alison wants to make a
+                                    reservation!</a></li>
+                            <li><a class="dropdown-item" href="reservations_user.html">Alison has approved your
+                                    reservation!</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="d-inline-block align-text-top" style="width: 1.3rem; height: 1.3rem;"
+                                src="portrait.jpg" alt="A portrait of me">
+                            Alison
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" aria-current="page" href="profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="h-100 gradient-custom-2">
+        <div class="main-container container-fluid py-5 h-100 w-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="w-100 col col-lg-9 col-xl-7">
+                    <div class="container-fluid p-3 text-black">
+                        <h1>Reservations</h1>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="reservations_user.html">As a User</a>
+                                </li>
+                                <li class="page-item"><a class="page-link active" href="reservations_host.html">As a Host</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="d-flex flex-column align-content-center">
+                            <div class="d-flex justify-content-between reservation-detail reservation-info">
+                                <div class="d-flex w-50 flex-column justify-content-evenly pe-2">
+                                    <div class="d-flex flex-column justify-content-start align-items-center">
+                                        <a href="property_details_host.html"
+                                            class="position-relative text-center align-self-center stretched-link subtle-link p-5">
+                                            <h5>St. Catherines, Ontario</h5>
+                                            <div class="text-black">
+                                                <h6>February 2, 2023 - February 4, 2023</h6>
+                                                <p class="card-text text-body-primary"><span class="bolded">$1600</span>
+                                                    for two nights</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hline"></div>
+                                    <div class="d-flex flex-column justify-content-end align-items-center">
+                                        <p>User: <a href="profile.html" class="link-dark">James Bond</a></p>
+                                        <p>Email: bondman@mail.com</p>
+                                        <p>Phone Number: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-50 flex-column justify-content-between ps-2">
+                                    <img class="w-100" src="https://www.boirongroup.ca/img/GenericHouse002.jpg"
+                                        alt="Listing">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <span class="heavy m-1">Pending</span>
+                                        <div class="d-flex flex-row justify-content-end align-self-center">
+                                            <button class="btn btn-primary m-1">Approve</button>
+                                            <button class="btn btn-danger btn-red m-1">Decline</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between reservation-detail reservation-info">
+                                <div class="d-flex w-50 flex-column justify-content-evenly pe-2">
+                                    <div class="d-flex flex-column justify-content-start align-items-center">
+                                        <a href="property_details_host.html"
+                                            class="position-relative text-center align-self-center stretched-link subtle-link p-5">
+                                            <h5>St. Catherines, Ontario</h5>
+                                            <div class="text-black">
+                                                <h6>February 2, 2023 - February 4, 2023</h6>
+                                                <p class="card-text text-body-primary"><span class="bolded">$1600</span>
+                                                    for two nights</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hline"></div>
+                                    <div class="d-flex flex-column justify-content-end align-items-center">
+                                        <p>User: <a href="profile.html" class="link-dark">James Bond</a></p>
+                                        <p>Email: bondman@mail.com</p>
+                                        <p>Phone Number: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-50 flex-column justify-content-between ps-2">
+                                    <img class="w-100" src="https://www.boirongroup.ca/img/GenericHouse002.jpg"
+                                        alt="Listing">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <p class="heavy m-1">Denied</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between reservation-detail reservation-info">
+                                <div class="d-flex w-50 flex-column justify-content-evenly pe-2">
+                                    <div class="d-flex flex-column justify-content-start align-items-center">
+                                        <a href="property_details_host.html"
+                                            class="position-relative text-center align-self-center stretched-link subtle-link p-5">
+                                            <h5>St. Catherines, Ontario</h5>
+                                            <div class="text-black">
+                                                <h6>February 2, 2023 - February 4, 2023</h6>
+                                                <p class="card-text text-body-primary"><span class="bolded">$1600</span>
+                                                    for two nights</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hline"></div>
+                                    <div class="d-flex flex-column justify-content-end align-items-center">
+                                        <p>User: <a href="profile.html" class="link-dark">James Bond</a></p>
+                                        <p>Email: bondman@mail.com</p>
+                                        <p>Phone Number: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-50 flex-column justify-content-between ps-2">
+                                    <img class="w-100" src="https://www.boirongroup.ca/img/GenericHouse002.jpg"
+                                        alt="Listing">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <p class="text-success-emphasis"><span class="heavy m-1">Approved</span></p>
+                                        <button class="btn btn-danger btn-red mt-2">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between reservation-detail reservation-info">
+                                <div class="d-flex w-50 flex-column justify-content-evenly pe-2">
+                                    <div class="d-flex flex-column justify-content-start align-items-center">
+                                        <a href="property_details_host.html"
+                                            class="position-relative text-center align-self-center stretched-link subtle-link p-5">
+                                            <h5>St. Catherines, Ontario</h5>
+                                            <div class="text-black">
+                                                <h6>February 2, 2023 - February 4, 2023</h6>
+                                                <p class="card-text text-body-primary"><span class="bolded">$1600</span>
+                                                    for two nights</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hline"></div>
+                                    <div class="d-flex flex-column justify-content-end align-items-center">
+                                        <p>User: <a href="profile.html" class="link-dark">James Bond</a></p>
+                                        <p>Email: bondman@mail.com</p>
+                                        <p>Phone Number: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-50 flex-column justify-content-between ps-2">
+                                    <img class="w-100" src="https://www.boirongroup.ca/img/GenericHouse002.jpg"
+                                        alt="Listing">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <p class="text-success-emphasis">Completed</p>
+                                        <a href="review_user.html" class="btn btn-success mt-2">Leave a Review</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between reservation-detail reservation-info">
+                                <div class="d-flex w-50 flex-column justify-content-evenly pe-2">
+                                    <div class="d-flex flex-column justify-content-start align-items-center">
+                                        <a href="property_details_host.html"
+                                            class="position-relative text-center align-self-center stretched-link subtle-link p-5">
+                                            <h5>St. Catherines, Ontario</h5>
+                                            <div class="text-black">
+                                                <h6>February 2, 2023 - February 4, 2023</h6>
+                                                <p class="card-text text-body-primary"><span class="bolded">$1600</span>
+                                                    for two nights</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hline"></div>
+                                    <div class="d-flex flex-column justify-content-end align-items-center">
+                                        <p>User: <a href="profile.html" class="link-dark">James Bond</a></p>
+                                        <p>Email: bondman@mail.com</p>
+                                        <p>Phone Number: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-50 flex-column justify-content-between ps-2">
+                                    <img class="w-100" src="https://www.boirongroup.ca/img/GenericHouse002.jpg"
+                                        alt="Listing">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <p class="text-danger-emphasis"><span class="heavy m-1">Cancellation
+                                                Requested</span></p>
+                                        <div class="d-flex flex-row justify-content-end align-self-center">
+                                            <button class="btn btn-primary m-1">Approve</button>
+                                            <button class="btn btn-danger btn-red m-1">Decline</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between reservation-detail reservation-info">
+                                <div class="d-flex w-50 flex-column justify-content-evenly pe-2">
+                                    <div class="d-flex flex-column justify-content-start align-items-center">
+                                        <a href="property_details_host.html"
+                                            class="position-relative text-center align-self-center stretched-link subtle-link p-5">
+                                            <h5>St. Catherines, Ontario</h5>
+                                            <div class="text-black">
+                                                <h6>February 2, 2023 - February 4, 2023</h6>
+                                                <p class="card-text text-body-primary"><span class="bolded">$1600</span>
+                                                    for two nights</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hline"></div>
+                                    <div class="d-flex flex-column justify-content-end align-items-center">
+                                        <p>User: <a href="profile.html" class="link-dark">James Bond</a></p>
+                                        <p>Email: bondman@mail.com</p>
+                                        <p>Phone Number: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-50 flex-column justify-content-between ps-2">
+                                    <img class="w-100" src="https://www.boirongroup.ca/img/GenericHouse002.jpg"
+                                        alt="Listing">
+                                    <div class="d-flex flex-row justify-content-start align-items-center">
+                                        <p class="text-danger-emphasis">Cancelled</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between reservation-detail reservation-info">
+                                <div class="d-flex w-50 flex-column justify-content-evenly pe-2">
+                                    <div class="d-flex flex-column justify-content-start align-items-center">
+                                        <a href="property_details_host.html"
+                                            class="position-relative text-center align-self-center stretched-link subtle-link p-5">
+                                            <h5>Huntsville, Ontario</h5>
+                                            <div class="text-black">
+                                                <h6>February 2, 2023 - February 4, 2023</h6>
+                                                <p class="card-text text-body-primary"><span class="bolded">$1600</span>
+                                                    for two nights</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hline"></div>
+                                    <div class="d-flex flex-column justify-content-end align-items-center">
+                                        <p>User: <a href="profile.html" class="link-dark">James Bond</a></p>
+                                        <p>Email: bondman@mail.com</p>
+                                        <p>Phone Number: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-50 flex-column justify-content-between ps-2">
+                                    <img class="w-100"
+                                        src="https://media.istockphoto.com/id/187062976/photo/generic-home-for-sale.jpg?s=170667a&w=0&k=20&c=jBiF6OePDiHy_EUT6RZvrelr63aJoG32LgEv0uF4wM4="
+                                        alt="Listing">
+                                    <div class="d-flex flex-row justify-content-start align-items-center">
+                                        <p class="text-danger-emphasis">Terminated</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between reservation-detail reservation-info">
+                                <div class="d-flex w-50 flex-column justify-content-evenly pe-2">
+                                    <div class="d-flex flex-column justify-content-start align-items-center">
+                                        <a href="property_details_host.html"
+                                            class="position-relative text-center align-self-center stretched-link subtle-link p-5">
+                                            <h5>Huntsville, Ontario</h5>
+                                            <div class="text-black">
+                                                <h6>February 2, 2023 - February 4, 2023</h6>
+                                                <p class="card-text text-body-primary"><span class="bolded">$1600</span>
+                                                    for two nights</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hline"></div>
+                                    <div class="d-flex flex-column justify-content-end align-items-center">
+                                        <p>User: <a href="profile.html" class="link-dark">James Bond</a></p>
+                                        <p>Email: bondman@mail.com</p>
+                                        <p>Phone Number: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-50 flex-column justify-content-between ps-2">
+                                    <img class="w-100"
+                                        src="https://media.istockphoto.com/id/187062976/photo/generic-home-for-sale.jpg?s=170667a&w=0&k=20&c=jBiF6OePDiHy_EUT6RZvrelr63aJoG32LgEv0uF4wM4="
+                                        alt="Listing">
+                                    <div class="d-flex flex-row justify-content-start align-items-center">
+                                        <p class="text-danger-emphasis">Expired</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Keep the following script at the bottom -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

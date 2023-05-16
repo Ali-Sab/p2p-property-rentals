@@ -1,0 +1,200 @@
+main {
+    width: 80%;
+    margin: 0px 10%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form {
+    width: 100%;
+    margin-bottom: 20%;
+    min-width: 450px;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.w-67 {
+    width: 67%;
+}
+
+hr.solid {
+    border-top: 2px solid #bbb;
+    margin: 20px 0px;
+}
+
+main form div button.btn-primary-dark {
+    background-color: rgb(0, 0, 110) !important;
+    border-color: black;
+    font-weight: 500 !important;
+}
+
+main form div button.btn-primary-dark:hover {
+    background-color: rgb(0, 0, 255) !important;
+    border-color: black;
+    font-weight: 500 !important;
+}
+
+section div.main-container {
+    max-width: 90%;
+    min-width: 450px;
+}
+
+.card-img-top {
+    max-height: 11rem;
+    aspect-ratio: 8/5;
+}
+
+.card.p-0 {
+    min-height: 375px !important;
+}
+
+.card.p-0:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+span.bolded {
+    font-weight: bold;
+}
+
+span.heavy {
+    font-weight: 500;
+}
+
+.btn.stretched-link {
+    height: 0px;
+    width: 0px;
+}
+
+#userInfo {
+    margin-top: 105px;
+}
+
+#userInfo p {
+    margin-bottom: 0.5rem;
+}
+
+form.d-flex input,
+form.d-flex button {
+    margin-top: 6px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-bottom: 6px;
+}
+
+#page {
+    display: flex;
+    margin: 0px;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#property-info h5,
+p {
+    margin: 0px !important;
+}
+
+.carousel-item {
+    max-height: 50vh;
+}
+
+.property-image {
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.property-image + a {
+    display: block;
+    margin: 5px auto;
+    max-width: 150px;
+}
+
+.property-image + a + img {
+    display: none;
+    max-height: 50px;
+    max-width: 100vw;
+}
+
+@media screen and (max-width: 600px) {
+    .property-image + a {
+        display: none;
+    }
+
+    .property-image + a + img {
+        display: block;
+        max-width: 40%;
+        margin: 0px auto;
+    }
+}
+
+.user-image {
+    margin: 0px auto;
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.subtle-link {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.subtle-link:hover {
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px;
+}
+
+div.list-group-item-secondary {
+    color: black;
+}
+
+div.list-group-item-dark {
+    color: black;
+    background-color: rgb(232, 232, 232);
+}
+
+div#availability-div:has(> #checkAvailability1:checked) + #price-div {
+    display: none;
+}
+
+.reservation-detail {
+    padding: 10px;
+}
+
+div.hline {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    opacity: 20%;
+    margin: 2px;
+}
+
+div.vline {
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    opacity: 20%;
+    margin: 2px;
+}
+
+div.reservation-info {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    box-shadow: 0px 1px 3px;
+}
+
+.btn {
+    font-weight: 300 !important;
+    border-radius: 4px !important;
+}
+
+button.btn-red {
+    background-color: rgb(221, 33, 0);   
+}

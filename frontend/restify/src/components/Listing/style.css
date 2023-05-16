@@ -1,0 +1,27 @@
+div#availability-div:has(> #checkAvailability1:checked) + #price-div {
+  display: none;
+}
+
+.user-image {
+  margin: 0px auto;
+  max-height: 50%;
+  max-width: 50%;
+}
+
+#property-info h5,
+p {
+    margin: 0px !important;
+}
+
+.carousel-item {
+    max-height: 50vh;
+}
+
+main {
+  width: 80%;
+  margin: 0px 10%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

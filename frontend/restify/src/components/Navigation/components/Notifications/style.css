@@ -1,0 +1,22 @@
+
+.delete-notification:active,
+.delete-notification:focus,
+.delete-notification:hover {
+  background-color: white !important;
+  cursor: default;
+}
+
+.trash.delete-notification:hover {
+  background-color: rgb(255, 221, 221) !important;
+  cursor: pointer;
+}
+
+.trash.delete-notification:active,
+.trash.delete-notification:focus {
+  background-color: rgb(255, 0, 0) !important;
+  cursor: pointer;
+}
+
+ul.pagination {
+  margin: 0px;
+}

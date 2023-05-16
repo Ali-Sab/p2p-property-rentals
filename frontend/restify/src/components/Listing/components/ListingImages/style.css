@@ -1,0 +1,34 @@
+.property-image-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.img-fluid.property-image {
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: scale-down;
+}
+
+.img-fluid.property-image + button {
+  display: block;
+  margin: 5px auto;
+  max-width: 150px;
+}
+
+.img-fluid.property-image + button + img {
+  display: none;
+  max-height: 50px;
+  max-width: 100vw;
+}
+
+@media screen and (max-width: 600px) {
+  .img-fluid.property-image + button {
+      display: none;
+  }
+
+  .img-fluid.property-image + button + img {
+      display: block;
+      max-width: 40%;
+      margin: 0px auto;
+  }
+}

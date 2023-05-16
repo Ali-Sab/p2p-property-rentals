@@ -1,0 +1,263 @@
+<!-- Bootstrap is used -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restify</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Restify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my_listings.html">My Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations_user.html">My Reservations</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i style="font-size:1.3rem" class="fa" title="Notifications">&#xf0f3;</i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="profile.html">User 15 has left a review.</a></li>
+                            <li><a class="dropdown-item" href="reservations_host.html">Alison wants to make a
+                                    reservation!</a></li>
+                            <li><a class="dropdown-item" href="reservations_user.html">Alison has approved your
+                                    reservation!</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="d-inline-block align-middle" style="width: 1.3rem; height: 1.3rem;"
+                                src="portrait.jpg" alt="A portrait of me">
+                            Alison
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" aria-current="page" href="profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="h-100 gradient-custom-2">
+        <div class="container py-5 h-100 main-container">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-9 col-xl-7">
+                    <div class="card">
+                        <div class="rounded-top text-white d-flex flex-row" style="background-color: #000;">
+                            <div id="carouselIndicators" class="carousel slide w-100">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.boirongroup.ca/img/GenericHouse002.jpg"
+                                            class="d-block w-100" alt="Picture 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG91c2UlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                                            class="d-block w-100" alt="Picture 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMGludGVyaW9yfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                            class="d-block w-100" alt="Picture 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-3 text-black" style="background-color: #f8f9fa;">
+                            <div class="container justify-content-between text-center py-1">
+                                <div class="row row-cols-2">
+                                    <div id="property-info" class="col">
+                                        <h5>St. Catherines, Ontario</h5>
+                                        <p>8 guests &#x2022 5 bedrooms &#x2022 4 bathrooms</p>
+                                        <p><span class="bolded">$800</span> a night</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mb-1 h5" title="Rating">4.0
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span title="Number of Reviews">(8)</span>
+                                        </p>
+                                        <p class="small text-muted mb-0">User Rating</p>
+                                        <a class="btn btn-primary mt-1" data-mdb-ripple-color="dark" style="z-index: 1;"
+                                            href="make_reservation.html">
+                                            Reserve Booking
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-3 text-black">
+                            <div class="mb-5">
+                                <p class="lead fw-normal mb-1">General Information</p>
+                                <div class="p-3" style="background-color: #f8f9fa;">
+                                    <p>Amenities:</p>
+                                    <ul>
+                                        <li>Lake nearby</li>
+                                        <li>Fireplace</li>
+                                        <li>Barbeque included</li>
+                                        <li>Trails nearby</li>
+                                    </ul>
+                                    <p>
+                                        A comfortable house to stay while exploring southern
+                                        Ontario.
+                                    </p>
+                                </div>
+                                <div class="p-1" style="background-color: #ffffff;"></div>
+                                <div class="p-3" style="background-color: #f8f9fa;">
+                                    <h5>Host:</h5>
+                                    <img class="d-inline-block align-middle" style="width: 3rem; height: 3rem;"
+                                        src="portrait.jpg" alt="A portrait of me">
+                                    <a href="profile.html" class="link-dark">Alison Sabuwala</a>
+                                    <p>Email: alison.sabuwala@mail.com</p>
+                                    <p>Phone Number: (123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </h5>
+                                        <small>February 2023</small>
+                                    </div>
+                                    <p class="mb-1">Beautiful house and clean swimming pool.</p>
+                                    <small>Jonathan Mars</small>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </h5>
+                                        <small>June 2022</small>
+                                    </div>
+                                    <p class="mb-1">Nice trails with beautiful views nearby.</p>
+                                    <small>Rajesh Patel</small>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </h5>
+                                        <small>May 2020</small>
+                                    </div>
+                                    <p class="mb-1">Niagara falls nearby. Worth the visit.</p>
+                                    <small>Anthony Gonsalves</small>
+                                    <div class="list-group">
+                                        <div class="list-group-item list-group-item-dark">
+                                            <div class="mb-1 d-flex justify-content-between">
+                                                <p class="m-1">I'm really sorry about that, Mr. Bond!</p>
+                                                <small class="m-1">September 2019</small>
+                                            </div>
+                                            <small class="m-1 text-dark">Response from <span
+                                                    class="heavy">Alison</span></small>
+                                        </div>
+                                        <div class="list-group-item list-group-item-secondary">
+                                            <a href="" class="btn btn-success">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </h5>
+                                        <small>December 2019</small>
+                                    </div>
+                                    <p class="mb-1">Very nice but weak heating.</p>
+                                    <small>Jon Snow</small>
+                                    <div class="card border-dark mt-2">
+                                        <div class="list-group">
+                                            <div class="list-group-item list-group-item-dark">
+                                                <div class="mb-1 d-flex justify-content-between">
+                                                    <p class="m-1">I'm really sorry about that, Mr. Snow!</p>
+                                                    <small class="m-1">September 2019</small>
+                                                </div>
+                                                <small class="m-1 text-dark">Response from <span
+                                                        class="heavy">Alison</span></small>
+                                            </div>
+                                            <div class="list-group-item list-group-item-secondary">
+                                                <div class="mb-1 d-flex justify-content-between">
+                                                    <p class="m-1">A spy never arrives late.</p>
+                                                    <small class="m-1">December 2019</small>
+                                                </div>
+                                                <small class="m-1 text-dark">Response from <span
+                                                        class="heavy">Jon</span></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Keep the following script at the bottom -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

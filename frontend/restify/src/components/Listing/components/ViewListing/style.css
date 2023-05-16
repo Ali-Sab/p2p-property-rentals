@@ -1,0 +1,22 @@
+.carousel.slide {
+  width: 100%;
+}
+
+img.listing-image {
+  object-fit: fill;
+  height: 33vh;
+}
+
+div.carousel-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.active.carousel-item {
+  width: fit-content;
+  margin-right: 0px !important;
+}
+
+.avatar-image {
+  object-fit: cover;
+}
